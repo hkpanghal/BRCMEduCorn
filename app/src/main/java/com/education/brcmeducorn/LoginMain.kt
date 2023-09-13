@@ -31,7 +31,7 @@ class LoginMain : AppCompatActivity() {
         btnLogin= findViewById(R.id.btnLogin)
 
         btnLogin.setOnClickListener {
-            Adjust().handleLogin(this@LoginMain)
+           Adjust().handleLogin(this@LoginMain)
         }
 
 //        fetching the login users

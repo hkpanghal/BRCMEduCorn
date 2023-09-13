@@ -27,7 +27,7 @@
             >
 
             <com.google.android.material.imageview.ShapeableImageView
-                android:id="@+id/imgEvents"
+                android:id="@+id/imgClasses"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
 
@@ -38,7 +38,7 @@
                 app:shapeAppearanceOverlay="@style/RoundedSquare" />
 
             <TextView
-                android:id="@+id/txtEvents"
+                android:id="@+id/txtClasses"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -58,17 +58,17 @@
             >
 
             <com.google.android.material.imageview.ShapeableImageView
-                android:id="@+id/imgGallery"
+                android:id="@+id/imgMarkAttendence"
                 android:layout_width="120dp"
                 android:layout_height="140dp"
 
                android:layout_gravity="center"
-                android:layout_toRightOf="@id/imgEvents"
+                android:layout_toRightOf="@id/imgClasses"
                 android:scaleType="centerCrop"
                 android:src="@drawable/image_frame"
                 app:shapeAppearanceOverlay="@style/RoundedSquare" />
             <TextView
-                android:id="@+id/txtGallery"
+                android:id="@+id/txtMarkAttendence"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -86,18 +86,18 @@
             android:layout_weight="1.6"
             >
             <com.google.android.material.imageview.ShapeableImageView
-                android:id="@+id/imgResults"
+                android:id="@+id/imgSendEvents"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
 
                 android:layout_marginTop="20dp"
 
-                android:layout_toRightOf="@id/imgGallery"
+                android:layout_toRightOf="@id/imgMarkAttendence"
                 android:scaleType="centerCrop"
                 android:src="@drawable/image_frame"
                 app:shapeAppearanceOverlay="@style/RoundedSquare" />
             <TextView
-                android:id="@+id/txtResults"
+                android:id="@+id/txtSendEvents"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -162,7 +162,7 @@
                 android:layout_height="140dp"
 
                 android:layout_gravity="center"
-                android:layout_toRightOf="@id/imgEvents"
+                android:layout_toRightOf="@id/imgClasses"
                 android:scaleType="centerCrop"
                 android:src="@drawable/image_frame"
                 app:shapeAppearanceOverlay="@style/RoundedSquare" />
@@ -191,7 +191,7 @@
 
                 android:layout_marginTop="20dp"
 
-                android:layout_toRightOf="@id/imgGallery"
+                android:layout_toRightOf="@id/imgMarkAttendence"
                 android:scaleType="centerCrop"
                 android:src="@drawable/image_frame"
                 app:shapeAppearanceOverlay="@style/RoundedSquare" />
