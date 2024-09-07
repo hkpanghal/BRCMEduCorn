@@ -10,31 +10,53 @@
 
 
     <ImageView
+        android:id="@+id/imgUpper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/upper_main_login"
+        android:tint="@color/appPrimary"
+        android:background="@color/white"
+        />
+
+    <ImageView
         android:id="@+id/background"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/splash_background_image"
         />
+
     <ImageView
+
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="10dp"
         android:src="@drawable/brcm_logo_big"
-
+        android:layout_below="@id/imgUpper"
         />
 
     <TextView
+
         android:id="@+id/autoText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
+        android:fontFamily="@font/no_to_sans_bold"
         android:text="BRCM Educorn"
         android:textColor="@color/black"
         android:textSize="40sp"
-        android:fontFamily="@font/no_to_sans_bold"
         android:textStyle="bold"
+
         />
 
+    <ImageView
+        android:id="@+id/imgLower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/lower_main_login"
+        android:layout_alignParentBottom="true"
+        android:tint="@color/appPrimary"
+        android:backgroundTintMode="src_over"
+        />
 
 </RelativeLayout>
