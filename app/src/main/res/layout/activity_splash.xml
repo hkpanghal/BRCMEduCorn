@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--suppress AndroidUnresolvableTag -->
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SplashActivity"
-    >
+    tools:context=".activites.SplashActivity"
+
+   >
+
+
 
 
     <ImageView
@@ -32,8 +35,17 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:src="@drawable/brcm_logo_big"
+<<<<<<< HEAD
         android:layout_below="@id/imgUpper"
+=======
+        android:shadowColor="#000000"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+
+>>>>>>> da2eb7dd8e1413e1a3b646cc909de43a4b874f37
         />
+
 
     <TextView
 
@@ -46,6 +58,7 @@
         android:textColor="@color/black"
         android:textSize="40sp"
         android:textStyle="bold"
+<<<<<<< HEAD
 
         />
 
@@ -59,4 +72,12 @@
         android:backgroundTintMode="src_over"
         />
 
+=======
+        android:shadowColor="#000000"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="2.5"
+        />
+
+>>>>>>> da2eb7dd8e1413e1a3b646cc909de43a4b874f37
 </RelativeLayout>

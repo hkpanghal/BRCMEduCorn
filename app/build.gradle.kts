@@ -1,6 +1,7 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("kotlin-kapt")
 }
 
 android {
@@ -27,11 +28,11 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "17"
     }
 }
 
@@ -45,10 +46,30 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
-    implementation ("de.hdodenhof:circleimageview:3.1.0")
-    implementation ("com.applandeo:material-calendar-view:1.9.0-rc03")
+    implementation("de.hdodenhof:circleimageview:3.1.0")
+    implementation("com.applandeo:material-calendar-view:1.9.0-rc03")
 
-//    added blur kit library for image blur effect
+    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:<latest-version>")
+    implementation("com.kizitonwose.calendar:view:2.3.0")
+    implementation("com.kizitonwose.calendar:compose:2.3.0")
+    implementation ("com.makeramen:roundedimageview:2.3.0")
+
+    // image slider library
+    implementation("com.github.denzcoskun:ImageSlideshow:0.1.2")
+
+    // neumorphic library
+    implementation("com.github.fornewid:neumorphism:0.2.1")
+
+    //gallery slider library
+    //country code picker
+    implementation("com.hbb20:ccp:2.5.2")
+
+
+    //room library
+    implementation("androidx.room:room-runtime:2.5.2")
+
+    kapt("androidx.room:room-compiler:2.5.2")
+    implementation("androidx.room:room-ktx:2.3.0")
 
 
 }

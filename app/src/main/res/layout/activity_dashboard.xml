@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".StudentDashboardActivity"
+    tools:context=".activites.StudentDashboardActivity"
     android:id="@+id/drawerLayout"
     >
 <androidx.coordinatorlayout.widget.CoordinatorLayout
@@ -13,12 +13,11 @@
 
     >
     <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:elevation="0dp"
+
         >
-
-
     <androidx.appcompat.widget.Toolbar
        android:id="@+id/toolbar"
         android:layout_width="match_parent"
@@ -85,7 +84,7 @@
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navigationView"
-        android:layout_width="240dp"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
         app:headerLayout="@layout/header_drawer_menu"
         app:menu="@menu/menu"

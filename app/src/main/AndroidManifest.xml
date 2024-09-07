@@ -12,9 +12,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BRCMEduCorn"
         tools:targetApi="31">
+<<<<<<< HEAD
 
+=======
         <activity
-            android:name=".SplashActivity"
+            android:name=".fragments.faculty_dashboard_fragments.AttendenceRegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activites.FacultyDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activites.StudentDashboardActivity"
+            android:exported="false" />
+>>>>>>> da2eb7dd8e1413e1a3b646cc909de43a4b874f37
+        <activity
+            android:name=".activites.AdminDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activites.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,10 +38,15 @@
             </intent-filter>
         </activity>
         <activity
+<<<<<<< HEAD
             android:name=".LoginMain"
             android:exported="false"/>
+=======
+            android:name=".activites.LoginMainActivity"
+            android:exported="false" />
+>>>>>>> da2eb7dd8e1413e1a3b646cc909de43a4b874f37
         <activity
-            android:name=".MainActivity"
+            android:name=".activites.MainActivity"
             android:exported="false" />
         <activity
             android:name=".StudentDashboardActivity"
